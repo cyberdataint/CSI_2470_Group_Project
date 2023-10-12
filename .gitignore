@@ -1,0 +1,9 @@
+
+*.vsidx
+.vs/CSI_2470_Group_Project/FileContentIndex/read.lock
+.vs/CSI_2470_Group_Project/v17/.wsuo
+.vs/CSI_2470_Group_Project/v17/workspaceFileList.bin
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+logs/localhost_log.2023-10-12.txt
