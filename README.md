@@ -9,7 +9,7 @@ git clone https://github.com/cyberdataint/CSI_2470_Group_Project.git
 ~~~
 
 ## 2. Set Environment Variables
-###Configure CATALINA_HOME:
+### Configure CATALINA_HOME:
 
 Open a Command Prompt and run the following command, replacing **C:\path\to\tomcat** with your Apache Tomcat installation 
 
