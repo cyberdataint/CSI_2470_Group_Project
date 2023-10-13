@@ -1,7 +1,9 @@
 # Dirctory 
  - [Dirctory](#Dirctory)
- - [prerequisites](#Prerequisites)
-
+ - [Prerequisites](#Prerequisites)
+ - [How to run Apache Tomcat](#How_to_Run_Apache_tomcat)
+ - [How to Stop the Server](#How_to_Stop_the_Server)
+ - [To view your local host](#To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge)
 
 # Prerequisites
 ## 1. Install JDK 1.5
@@ -29,7 +31,7 @@ Similarly, set the JAVA_HOME environment variable to your JDK installation direc
 ~~~sh
 set JAVA_HOME=C:\Program Files\Java\jdk1.5.0_22
 ~~~
-# How to Run Apache Tomcat
+# How_to_Run_Apache_Tomcat
 
 To start the Apache Tomcat server, open a Command Prompt and execute the following command:
 
@@ -37,14 +39,14 @@ To start the Apache Tomcat server, open a Command Prompt and execute the followi
 %CATALINA_HOME%\bin\startup.bat
 ~~~
 
-# How to Stop the Server
+# How_to_Stop_the_Server
 To gracefully shut down the Apache Tomcat server, open a Command Prompt and execute the following command:
 ~~~
 %CATALINA_HOME%\bin\shutdown.bat
 ~~~
 With these steps, you should be able to set up and run Apache Tomcat using JDK 1.5.0_22 on your Windows system.
 
-# To view your local host please copy and paste the following in Chrome or Edge 
+# To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge 
 
 ~~~
 http://localhost:8082/
