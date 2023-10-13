@@ -1,6 +1,6 @@
 # Dirctory 
- - [Dirctory] (Dirctory)
- - [prerequisites] (Prerequisites)
+ - [Dirctory](Dirctory)
+ - [prerequisites](Prerequisites)
 
 
 # Prerequisites
