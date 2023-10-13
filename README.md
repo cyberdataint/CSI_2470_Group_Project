@@ -1,3 +1,8 @@
+# Dirctory 
+ - [Dirctory]
+ - [prerequisites]
+
+
 # Prerequisites
 ## 1. Install JDK 1.5
 You'll need Java Development Kit (JDK) version 1.5.0_22 or a compatible version. You can download it from the Java SE 5 Archive.
