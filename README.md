@@ -42,6 +42,7 @@ set JAVA_HOME=C:\Program Files\Java\jdk1.5.0_22
 
 ### How_to_Run_Apache_Tomcat
 
+
 To start the Apache Tomcat server, open a Command Prompt and execute the following command:
 
 
@@ -71,6 +72,7 @@ http://localhost:8082/
 
 
 # What_Needs_To_get_Done 
+
 
 Description of the overall program design, a verbal description of "how it works" including the basics of what the system is doing. Also describe possible improvements and extensions to your programs (and sketch how they might be made).
 The contents and interrelationship of your source code files.
