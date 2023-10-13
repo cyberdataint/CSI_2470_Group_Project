@@ -26,7 +26,7 @@ Open a Command Prompt and run the following command, replacing **C:\path\to\tomc
 
 
 ~~~sh
-set CATALINA_HOME=C:\path\to\tomcat
+set CATALINA_HOME=C:\Path**\To**\CSI_2470_Group_Project\jakarta_tomcat_5.0.25
 ~~~
 
 
