@@ -7,11 +7,11 @@
 
 
 # Prerequisites
-## 1. Install JDK 1.5
+### 1. Install JDK 1.5
 You'll need Java Development Kit (JDK) version 1.5.0_22 or a compatible version. You can download it from the [Java SE 5 Archive](https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html).
 
 
-## Clone Github Repository 
+### Clone Github Repository 
 
 
 ~~~sh
@@ -19,7 +19,7 @@ git clone https://github.com/cyberdataint/CSI_2470_Group_Project.git
 ~~~
 
 
-## 2. Set Environment Variables
+### 2. Set Environment Variables
 
 ### Configure CATALINA_HOME:
 Open a Command Prompt and run the following command, replacing **C:\path\to\tomcat** with your Apache Tomcat installation 
@@ -30,7 +30,7 @@ set CATALINA_HOME=C:\path\to\tomcat
 ~~~
 
 
-## Set JAVA_HOME:
+### Set JAVA_HOME:
 
 Similarly, set the JAVA_HOME environment variable to your JDK installation directory. Here's an example:
 
@@ -40,7 +40,7 @@ set JAVA_HOME=C:\Program Files\Java\jdk1.5.0_22
 ~~~
 
 
-## How_to_Run_Apache_Tomcat
+### How_to_Run_Apache_Tomcat
 
 To start the Apache Tomcat server, open a Command Prompt and execute the following command:
 
@@ -50,7 +50,7 @@ To start the Apache Tomcat server, open a Command Prompt and execute the followi
 ~~~
 
 
-## How_to_Stop_the_Server
+### How_to_Stop_the_Server
 To gracefully shut down the Apache Tomcat server, open a Command Prompt and execute the following command:
 
 
@@ -61,7 +61,7 @@ To gracefully shut down the Apache Tomcat server, open a Command Prompt and exec
 
 With these steps, you should be able to set up and run Apache Tomcat using JDK 1.5.0_22 on your Windows system.
 
-## To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge 
+### To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge 
 
 
 ~~~
