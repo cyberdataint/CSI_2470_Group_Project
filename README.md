@@ -1,6 +1,6 @@
 # Dirctory 
- - [Dirctory](Dirctory)
- - [prerequisites](Prerequisites)
+ - [Dirctory](readme.mv/Dirctory)
+ - [prerequisites](readme.mv\Prerequisites)
 
 
 # Prerequisites
