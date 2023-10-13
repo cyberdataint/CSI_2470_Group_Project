@@ -74,19 +74,19 @@ http://localhost:8082/
 # What_Needs_To_get_Done 
 
 
-Description of the overall program design, a verbal description of "how it works" including the basics of what the system is doing. Also describe possible improvements and extensions to your programs (and sketch how they might be made).
-The contents and interrelationship of your source code files.
--
-A logical flow diagram in the unified modeling language (UML) to describe the logical flow structure of the software.
--
-A logical flow diagram for every method, functions, and procedures defined in the software.
--
-Files/Database Section Description of any input files and/or database to test the application. (a file with valid data and a file with invalid data)
--
-Compile/Execution Section, which briefly provides information about compiling environment, compiling steps, execution instructions etc. You are encouraged to provide as much detailed information as you think might help to run your code.
--
-Test Cases Section, which:
-Describes the tests you have run on your program to convince yourself that it is indeed correct.
-Also describe any cases for which your program is known not to work correctly.
--
-Includes screenshots of execution sessions processing valid inputs and invalid inputs
+- Description of the overall program design, a verbal description of "how it works" including the basics of what the system is doing. Also describe possible improvements and extensions to your programs (and sketch how they might be made).
+ The contents and interrelationship of your source code files.
+
+- A logical flow diagram in the unified modeling language (UML) to describe the logical flow structure of the software.
+
+- A logical flow diagram for every method, functions, and procedures defined in the software.
+
+- Files/Database Section Description of any input files and/or database to test the application. (a file with valid data and a file with invalid data)
+
+- Compile/Execution Section, which briefly provides information about compiling environment, compiling steps, execution instructions etc. You are encouraged to provide as much detailed information as you think might help to run your code.
+
+- Test Cases Section, which:
+ Describes the tests you have run on your program to convince yourself that it is indeed correct.
+ Also describe any cases for which your program is known not to work correctly.
+
+- Includes screenshots of execution sessions processing valid inputs and invalid inputs
