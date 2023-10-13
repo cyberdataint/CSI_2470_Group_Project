@@ -1,16 +1,17 @@
-Prerequisites
-1. Install JDK 1.5
+#Prerequisites
+##1. Install JDK 1.5
 You'll need Java Development Kit (JDK) version 1.5.0_22 or a compatible version. You can download it from the Java SE 5 Archive.
 
-2. Set Environment Variables
-Configure CATALINA_HOME:
+##2. Set Environment Variables
+###Configure CATALINA_HOME:
 
-Open a Command Prompt and run the following command, replacing C:\path\to\tomcat with your Apache Tomcat installation directory:
+Open a Command Prompt and run the following command, replacing **C:\path\to\tomcat** with your Apache Tomcat installation 
 
-shell
-Copy code
+
+~~~sh
 set CATALINA_HOME=C:\path\to\tomcat
-Set JAVA_HOME:
+~~~
+##Set JAVA_HOME:
 
 Similarly, set the JAVA_HOME environment variable to your JDK installation directory. Here's an example:
 
