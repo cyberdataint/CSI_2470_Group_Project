@@ -40,7 +40,7 @@ set JAVA_HOME=C:\Program Files\Java\jdk1.5.0_22
 ~~~
 
 
-# How_to_Run_Apache_Tomcat
+## How_to_Run_Apache_Tomcat
 
 To start the Apache Tomcat server, open a Command Prompt and execute the following command:
 
@@ -50,7 +50,7 @@ To start the Apache Tomcat server, open a Command Prompt and execute the followi
 ~~~
 
 
-# How_to_Stop_the_Server
+## How_to_Stop_the_Server
 To gracefully shut down the Apache Tomcat server, open a Command Prompt and execute the following command:
 
 
@@ -61,7 +61,7 @@ To gracefully shut down the Apache Tomcat server, open a Command Prompt and exec
 
 With these steps, you should be able to set up and run Apache Tomcat using JDK 1.5.0_22 on your Windows system.
 
-# To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge 
+## To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge 
 
 
 ~~~
