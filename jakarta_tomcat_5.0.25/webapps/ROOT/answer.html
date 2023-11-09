@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,8 +63,8 @@
         <button onclick="addAnswer('Don\'t Care')">Don't Care</button>
         <button onclick="toggleAnswersDisplay()">Toggle Answers</button>
 
-        <!-- Back button to return to login.jsp -->
-        <a href="login.jsp"><button onclick="loadUserList()">Back</button></a>
+        <!-- Back button to return to login.html -->
+        <a href="login.html"><button onclick="loadUserList()">Back</button></a>
 
         <div id="answerSection" class="hidden">
             <h2>Answer Counts for <span id="userFullName"></span>:</h2>
@@ -76,9 +75,6 @@
     </div>
     
     <script>
-        // Initialize answers array with stored answers
-        let answers = JSON.parse(localStorage.getItem("answers")) || [];
-
         function getUserName() {
             const urlParams = new URLSearchParams(window.location.search);
             const firstName = urlParams.get('firstName');
@@ -86,27 +82,22 @@
             return `${firstName} ${lastName}`;
         }
 
-        function loadUserList() {
-            // Load existing users from sessionStorage
-            const userList = document.getElementById("userList");
-            const storedUsers = sessionStorage.getItem("users");
-
-            if (storedUsers) {
-                const users = JSON.parse(storedUsers);
-                userList.innerHTML = "";
-                users.forEach(user => {
-                    addUserToList(user.firstName, user.lastName);
-                });
+        function getUserAnswers(userName) {
+            const storedAnswers = localStorage.getItem("answers");
+            if (storedAnswers) {
+                const answers = JSON.parse(storedAnswers);
+                return answers.filter(answer => answer.userName === userName);
             }
+            return [];
         }
 
         function updateAnswerCounts() {
             const userName = getUserName();
-            const userAnswers = answers.filter(answer => answer.userName === userName);
-            const yesCount = userAnswers.filter(answer => answer.answer === "Yes").length;
-            const noCount = userAnswers.filter(answer => answer.answer === "No").length;
-            const dontCareCount = userAnswers
-                .filter(answer => answer.answer === "Don't Care").length;
+            const answers = getUserAnswers(userName);
+            const yesCount = answers.filter(answer => answer.answer === "Yes").length;
+            const noCount = answers.filter(answer => answer.answer === "No").length;
+            const dontCareCount = answers
+            .filter(answer => answer.answer === "Don't Care").length;
 
             document.getElementById("yesCount").textContent = yesCount;
             document.getElementById("noCount").textContent = noCount;
@@ -121,13 +112,12 @@
 
         function addAnswer(answer) {
             const userName = getUserName();
-            
-            // Add the answer to the global answers array
+            const storedAnswers = localStorage.getItem("answers");
+            const answers = storedAnswers ? JSON.parse(storedAnswers) : [];
+
             answers.push({ userName: userName, answer: answer });
 
-            // Save the answers to localStorage
             localStorage.setItem("answers", JSON.stringify(answers));
-
             updateAnswerCounts();
         }
 
