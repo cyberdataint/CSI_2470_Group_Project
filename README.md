@@ -1,6 +1,6 @@
 # CSI 2470 Project 
 
-![Having Fun!](/CSI_2470_Group_Project/jakarta_tomcat_5.0.25/webapps/ROOT/test1.jpg)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/test1.jpg)
 
 # Directory
 
