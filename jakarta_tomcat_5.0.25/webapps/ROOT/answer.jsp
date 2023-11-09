@@ -77,7 +77,7 @@
     
     <script>
         // Initialize answers array with stored answers
-        let answers = JSON.parse(localStorage.getItem("answers")) || [];
+        let answers = JSON.parse(sessionStorage.getItem("answers")) || [];
 
         function getUserName() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -126,7 +126,7 @@
             answers.push({ userName: userName, answer: answer });
 
             // Save the answers to localStorage
-            localStorage.setItem("answers", JSON.stringify(answers));
+            sessionStorage.setItem("answers", JSON.stringify(answers));
 
             updateAnswerCounts();
         }

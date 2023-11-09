@@ -118,7 +118,7 @@ public final class answer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    \r\n");
       out.write("    <script>\r\n");
       out.write("        // Initialize answers array with stored answers\r\n");
-      out.write("        let answers = JSON.parse(localStorage.getItem(\"answers\")) || [];\r\n");
+      out.write("        let answers = JSON.parse(sessionStorage.getItem(\"answers\")) || [];\r\n");
       out.write("\r\n");
       out.write("        function getUserName() {\r\n");
       out.write("            const urlParams = new URLSearchParams(window.location.search);\r\n");
@@ -171,7 +171,7 @@ public final class answer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            answers.push({ userName: userName, answer: answer });\r\n");
       out.write("\r\n");
       out.write("            // Save the answers to localStorage\r\n");
-      out.write("            localStorage.setItem(\"answers\", JSON.stringify(answers));\r\n");
+      out.write("            sessionStorage.setItem(\"answers\", JSON.stringify(answers));\r\n");
       out.write("\r\n");
       out.write("            updateAnswerCounts();\r\n");
       out.write("        }\r\n");
