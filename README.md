@@ -1,21 +1,20 @@
-# Directory
-
-- [Directory](#directory)
-- [Prerequisites](#prerequisites)
-- [How to Run Apache Tomcat](#how-to-run-apache-tomcat)
-- [How to Stop the Server](#how-to-stop-the-server)
-- [To View Your Local Host](#to-view-your-local-host-please-copy-and-paste-the-following-in-chrome-or-edge)
-- [What Needs to Get Done for Readme](#what-needs-to-get-done)
+# Dirctory 
+ - [Dirctory](#Dirctory)
+ - [Prerequisites](#Prerequisites)
+ - [How to run Apache Tomcat](#How_to_Run_Apache_tomcat)
+ - [How to Stop the Server](#How_to_Stop_the_Server)
+ - [To view your local host](#To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge)
+ - [What needs to get done for Readme](#What_Needs_To_get_Done) 
 
 # Prerequisites
-
-## 1. Install JDK 1.5
+### 1. Install JDK 1.5
 You'll need Java Development Kit (JDK) version 1.5.0_22 or a compatible version (I used the first .exe installer). You can download it from the [Java SE 5 Archive](https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html).
 
-## Clone Github Repository 
-**Note:** The file must be cloned to the C:\ drive.
 
-```sh
+### Clone Github Repository 
+
+FILE MUST BE CLONED TO C:\ DRIVE 
+~~~sh
 git clone https://github.com/cyberdataint/CSI_2470_Group_Project.git
 ~~~
 
