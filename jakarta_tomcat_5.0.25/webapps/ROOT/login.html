@@ -75,9 +75,10 @@
     </div>
 
     <script>
+        // Load existing users from sessionStorage
         function loadUserList() {
             const userList = document.getElementById("userList");
-            const storedUsers = localStorage.getItem("users");
+            const storedUsers = sessionStorage.getItem("users");
 
             if (storedUsers) {
                 const users = JSON.parse(storedUsers);
@@ -89,11 +90,15 @@
         }
 
         function login() {
-            var firstName = document.getElementById("firstName").value;
-            var lastName = document.getElementById("lastName").value;
+            var firstName = capitalizeFirstLetter(document.getElementById("firstName").value);
+            var lastName = capitalizeFirstLetter(document.getElementById("lastName").value);
             addUserToList(firstName, lastName);
             storeUser(firstName, lastName);
             window.location.href = `answer.html?firstName=${firstName}&lastName=${lastName}`;
+        }
+
+        function capitalizeFirstLetter(name) {
+            return name.charAt(0).toUpperCase() + name.slice(1);
         }
 
         function addUserToList(firstName, lastName) {
@@ -104,10 +109,20 @@
         }
 
         function storeUser(firstName, lastName) {
-            const storedUsers = localStorage.getItem("users");
+            // Retrieve existing users from sessionStorage
+            const storedUsers = sessionStorage.getItem("users");
             const users = storedUsers ? JSON.parse(storedUsers) : [];
-            users.push({ firstName, lastName });
-            localStorage.setItem("users", JSON.stringify(users));
+
+            // Check if the user already exists
+            const userExists = users.some(user => user.firstName === firstName && user.lastName === lastName);
+
+            if (!userExists) {
+                // Add the user to the array
+                users.push({ firstName, lastName });
+
+                // Save the updated users to sessionStorage
+                sessionStorage.setItem("users", JSON.stringify(users));
+            }
         }
 
         loadUserList();
