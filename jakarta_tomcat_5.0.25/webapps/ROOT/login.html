@@ -3,7 +3,6 @@
 <head>
     <title>CSI Group Project</title>
     <style>
-        /* Styles for the page layout and appearance */
         body {
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
@@ -55,12 +54,10 @@
     </style>
 </head>
 <body>
-    <!-- Main content of the page -->
     <div class="container" id="loginContainer">
         <h1>CSI Group Project</h1>
         <div class="login-container">
             <h2>Login</h2>
-            <!-- User login form -->
             <form id="loginForm">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" required>
@@ -68,54 +65,42 @@
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" required>
                 <br>
-                <!-- Button to trigger login function -->
                 <button type="button" onclick="login()">Log In</button>
             </form>
-            <!-- User list section -->
             <div class="user-list">
                 <h2>User List</h2>
-                <!-- Placeholder for the user list -->
                 <ul id="userList"></ul>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript section -->
     <script>
-        // Function to retrieve the user list from localStorage on page load
+        // Load existing users from sessionStorage
         function loadUserList() {
             const userList = document.getElementById("userList");
-            const storedUsers = localStorage.getItem("users");
+            const storedUsers = sessionStorage.getItem("users");
 
             if (storedUsers) {
                 const users = JSON.parse(storedUsers);
-
-                // Clear existing list before adding users
                 userList.innerHTML = "";
-
-                // Add users to the list
                 users.forEach(user => {
                     addUserToList(user.firstName, user.lastName);
                 });
             }
         }
 
-        // Function to handle the login process
         function login() {
-            var firstName = document.getElementById("firstName").value;
-            var lastName = document.getElementById("lastName").value;
-
-            // Add the user to the user list
+            var firstName = capitalizeFirstLetter(document.getElementById("firstName").value);
+            var lastName = capitalizeFirstLetter(document.getElementById("lastName").value);
             addUserToList(firstName, lastName);
-
-            // Store the user in localStorage
             storeUser(firstName, lastName);
-
-            // Redirect to answer.html with user details
             window.location.href = `answer.html?firstName=${firstName}&lastName=${lastName}`;
         }
 
-        // Function to add a new user to the user list
+        function capitalizeFirstLetter(name) {
+            return name.charAt(0).toUpperCase() + name.slice(1);
+        }
+
         function addUserToList(firstName, lastName) {
             const userList = document.getElementById("userList");
             const listItem = document.createElement("li");
@@ -123,19 +108,23 @@
             userList.appendChild(listItem);
         }
 
-        // Function to store user in localStorage
         function storeUser(firstName, lastName) {
-            const storedUsers = localStorage.getItem("users");
+            // Retrieve existing users from sessionStorage
+            const storedUsers = sessionStorage.getItem("users");
             const users = storedUsers ? JSON.parse(storedUsers) : [];
 
-            // Add the new user to the list
-            users.push({ firstName, lastName });
+            // Check if the user already exists
+            const userExists = users.some(user => user.firstName === firstName && user.lastName === lastName);
 
-            // Store the updated user list in localStorage
-            localStorage.setItem("users", JSON.stringify(users));
+            if (!userExists) {
+                // Add the user to the array
+                users.push({ firstName, lastName });
+
+                // Save the updated users to sessionStorage
+                sessionStorage.setItem("users", JSON.stringify(users));
+            }
         }
 
-        // Load the user list on page load
         loadUserList();
     </script>
 </body>

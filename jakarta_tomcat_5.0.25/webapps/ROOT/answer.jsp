@@ -1,9 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Answers - CSI Group Project</title>
     <style>
-        /* Styles for the page layout and appearance */
         body {
             background-color: #007bff;
             font-family: Arial, sans-serif;
@@ -56,20 +56,17 @@
     </style>
 </head>
 <body>
-    <!-- Main content of the page -->
     <h1>CSI Group Project</h1>
     <div class="container" id="answerContainer" class="hidden">
-        <!-- Welcome message and buttons for user interaction -->
         <p>Welcome, <span id="userName"></span>! Choose your answer:</p>
         <button onclick="addAnswer('Yes')">Yes</button>
         <button onclick="addAnswer('No')">No</button>
         <button onclick="addAnswer('Don\'t Care')">Don't Care</button>
         <button onclick="toggleAnswersDisplay()">Toggle Answers</button>
 
-        <!-- Back button to return to login.html -->
-        <a href="login.html"><button>Back</button></a>
+        <!-- Back button to return to login.jsp -->
+        <a href="login.jsp"><button onclick="loadUserList()">Back</button></a>
 
-        <!-- Answer counts section, initially hidden -->
         <div id="answerSection" class="hidden">
             <h2>Answer Counts for <span id="userFullName"></span>:</h2>
             <p>Yes: <span id="yesCount">0</span></p>
@@ -78,9 +75,10 @@
         </div>
     </div>
     
-    <!-- JavaScript section -->
     <script>
-        // Function to retrieve user's name from the URL query parameters
+        // Initialize answers array with stored answers
+        let answers = JSON.parse(localStorage.getItem("answers")) || [];
+
         function getUserName() {
             const urlParams = new URLSearchParams(window.location.search);
             const firstName = urlParams.get('firstName');
@@ -88,53 +86,51 @@
             return `${firstName} ${lastName}`;
         }
 
-        // Function to retrieve user answers from localStorage
-        function getUserAnswers(userName) {
-            const storedAnswers = localStorage.getItem("answers");
-            if (storedAnswers) {
-                const answers = JSON.parse(storedAnswers);
-                return answers.filter(answer => answer.userName === userName);
+        function loadUserList() {
+            // Load existing users from sessionStorage
+            const userList = document.getElementById("userList");
+            const storedUsers = sessionStorage.getItem("users");
+
+            if (storedUsers) {
+                const users = JSON.parse(storedUsers);
+                userList.innerHTML = "";
+                users.forEach(user => {
+                    addUserToList(user.firstName, user.lastName);
+                });
             }
-            return [];
         }
 
-        // Function to update answer counts
         function updateAnswerCounts() {
             const userName = getUserName();
-            const answers = getUserAnswers(userName);
-            const yesCount = answers.filter(answer => answer.answer === "Yes").length;
-            const noCount = answers.filter(answer => answer.answer === "No").length;
-            const dontCareCount = answers.filter(answer => answer.answer === "Don't Care").length;
+            const userAnswers = answers.filter(answer => answer.userName === userName);
+            const yesCount = userAnswers.filter(answer => answer.answer === "Yes").length;
+            const noCount = userAnswers.filter(answer => answer.answer === "No").length;
+            const dontCareCount = userAnswers
+                .filter(answer => answer.answer === "Don't Care").length;
 
-            // Update the displayed answer counts
             document.getElementById("yesCount").textContent = yesCount;
             document.getElementById("noCount").textContent = noCount;
             document.getElementById("dontCareCount").textContent = dontCareCount;
         }
 
-        // Function to toggle the display of answers section
         function toggleAnswersDisplay() {
             var answerSection = document.getElementById("answerSection");
             answerSection.classList.toggle("hidden");
-        }
-
-        // Function to add an answer to the array and update counts
-        function addAnswer(answer) {
-            const userName = getUserName();
-            const storedAnswers = localStorage.getItem("answers");
-            const answers = storedAnswers ? JSON.parse(storedAnswers) : [];
-
-            // Add the new answer to the list
-            answers.push({ userName: userName, answer: answer });
-
-            // Store the updated answers in localStorage
-            localStorage.setItem("answers", JSON.stringify(answers));
-
-            // Update the displayed answer counts
             updateAnswerCounts();
         }
 
-        // On page load, update the user name and answer counts
+        function addAnswer(answer) {
+            const userName = getUserName();
+            
+            // Add the answer to the global answers array
+            answers.push({ userName: userName, answer: answer });
+
+            // Save the answers to localStorage
+            localStorage.setItem("answers", JSON.stringify(answers));
+
+            updateAnswerCounts();
+        }
+
         document.getElementById("userName").textContent = getUserName();
         document.getElementById("userFullName").textContent = getUserName();
         updateAnswerCounts();
