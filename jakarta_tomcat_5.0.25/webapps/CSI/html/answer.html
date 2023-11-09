@@ -3,6 +3,7 @@
 <head>
     <title>Answers - CSI Group Project</title>
     <style>
+        /* Styles for the page layout and appearance */
         body {
             background-color: #007bff;
             font-family: Arial, sans-serif;
@@ -55,16 +56,20 @@
     </style>
 </head>
 <body>
+    <!-- Main content of the page -->
     <h1>CSI Group Project</h1>
     <div class="container" id="answerContainer" class="hidden">
+        <!-- Welcome message and buttons for user interaction -->
         <p>Welcome, <span id="userName"></span>! Choose your answer:</p>
         <button onclick="addAnswer('Yes')">Yes</button>
         <button onclick="addAnswer('No')">No</button>
         <button onclick="addAnswer('Don\'t Care')">Don't Care</button>
         <button onclick="toggleAnswersDisplay()">Toggle Answers</button>
 
-        <a href="login.html"><button>Back</button></a> <!-- Back button to return to login.html -->
+        <!-- Back button to return to login.html -->
+        <a href="login.html"><button>Back</button></a>
 
+        <!-- Answer counts section, initially hidden -->
         <div id="answerSection" class="hidden">
             <h2>Answer Counts for <span id="userFullName"></span>:</h2>
             <p>Yes: <span id="yesCount">0</span></p>
@@ -73,6 +78,7 @@
         </div>
     </div>
     
+    <!-- JavaScript section -->
     <script>
         // Function to retrieve user's name from the URL query parameters
         function getUserName() {
@@ -100,12 +106,13 @@
             const noCount = answers.filter(answer => answer.answer === "No").length;
             const dontCareCount = answers.filter(answer => answer.answer === "Don't Care").length;
 
+            // Update the displayed answer counts
             document.getElementById("yesCount").textContent = yesCount;
             document.getElementById("noCount").textContent = noCount;
             document.getElementById("dontCareCount").textContent = dontCareCount;
         }
 
-        // Function to toggle the display of answers
+        // Function to toggle the display of answers section
         function toggleAnswersDisplay() {
             var answerSection = document.getElementById("answerSection");
             answerSection.classList.toggle("hidden");
@@ -116,8 +123,14 @@
             const userName = getUserName();
             const storedAnswers = localStorage.getItem("answers");
             const answers = storedAnswers ? JSON.parse(storedAnswers) : [];
+
+            // Add the new answer to the list
             answers.push({ userName: userName, answer: answer });
+
+            // Store the updated answers in localStorage
             localStorage.setItem("answers", JSON.stringify(answers));
+
+            // Update the displayed answer counts
             updateAnswerCounts();
         }
 
