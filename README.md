@@ -2,10 +2,10 @@
 
 - [Directory](#directory)
 - [Prerequisites](#prerequisites)
-- [How to Run Apache Tomcat](#how-to-run-apache-tomcat)
-- [How to Stop the Server](#how-to-stop-the-server)
-- [To View Your Local Host](#to-view-your-local-host-please-copy-and-paste-the-following-in-chrome-or-edge)
-- [What Needs to Get Done for Readme](#what-needs-to-get-done)
+- [How to Run Apache Tomcat](#how_to_run_apache_tomcat)
+- [How to Stop the Server](#how_to_stop_the_server)
+- [To View Your Local Host](#to_view_your_local_host_please_copy_and_paste_the_following_in_chrome_or_edge)
+- [What Needs to Get Done for Readme](#what_needs_to_get_done)
 
 # Prerequisites
 
