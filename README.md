@@ -10,13 +10,7 @@
 - [How to Stop the Server](#how_to_stop_the_server)
 - [To View Your Local Host](#to_view_your_local_host_please_copy_and_paste_the_following_in_chrome_or_edge)
 - [What Needs to Get Done for Readme](#what_needs_to_get_done)
-- [Description of the Overall Program Design](#1._Description_of_the_Overall_Program_Design)
-- [Logical Flow Diagram (UML)](#2._Logical_Flow_Diagram_(UML))
-- [Logical Flow Diagrams for Methods, Functions, and Procedures](#3._Logical_Flow_Diagrams_for_Methods_Functions_and_Procedures)
-- [Files/Database Section](#4._Files/Database_Section)
-- [Compile/Execution Section](#5._Compile/Execution_Section)
-- [Test Cases Section](#6._Test_Cases_Section)
-- [Screenshots of Execution Sessions](#7._Screenshots_of_Execution_Sessions)
+
 
 
 # Prerequisites
