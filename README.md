@@ -1,19 +1,23 @@
-# Dirctory 
- - [Dirctory](#Dirctory)
- - [Prerequisites](#Prerequisites)
- - [How to run Apache Tomcat](#How_to_Run_Apache_tomcat)
- - [How to Stop the Server](#How_to_Stop_the_Server)
- - [To view your local host](#To_view_your_local_host_please_copy_and_paste_the_following_in_Chrome_or_Edge)
- - [What needs to get done for Readme](#What_Needs_To_get_Done) 
+# CSI 2470 Project 
+
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/test1.jpg)
+
+# Directory
+
+- [Directory](#directory)
+- [Prerequisites](#prerequisites)
+- [How to Run Apache Tomcat](#how_to_run_apache_tomcat)
+- [How to Stop the Server](#how_to_stop_the_server)
+- [To View Your Local Host](#to_view_your_local_host_please_copy_and_paste_the_following_in_chrome_or_edge)
+- [What Needs to Get Done for Readme](#what_needs_to_get_done)
 
 # Prerequisites
-### 1. Install JDK 1.5
+
+## 1. Install JDK 1.5
 You'll need Java Development Kit (JDK) version 1.5.0_22 or a compatible version (I used the first .exe installer). You can download it from the [Java SE 5 Archive](https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html).
 
-
-### Clone Github Repository 
-
-FILE MUST BE CLONED TO C:\ DRIVE 
+## Clone Github Repository 
+**Note:** The file must be cloned to the C:\ drive.
 ~~~sh
 git clone https://github.com/cyberdataint/CSI_2470_Group_Project.git
 ~~~
@@ -74,19 +78,41 @@ http://localhost:8082/
 # What_Needs_To_get_Done 
 
 
-- Description of the overall program design, a verbal description of "how it works" including the basics of what the system is doing. Also describe possible improvements and extensions to your programs (and sketch how they might be made).
- The contents and interrelationship of your source code files.
+### 1. Description of the Overall Program Design
 
-- A logical flow diagram in the unified modeling language (UML) to describe the logical flow structure of the software.
+#### Purpose:
+This section offers a verbal overview of the project's functionality, outlining the core processes and system behavior. Additionally, it discusses potential improvements and extensions, providing insight into the source code's structure and interrelationships.
 
-- A logical flow diagram for every method, functions, and procedures defined in the software.
+### 2. Logical Flow Diagram (UML)
 
-- Files/Database Section Description of any input files and/or database to test the application. (a file with valid data and a file with invalid data)
+#### Purpose:
+A Unified Modeling Language (UML) diagram illustrates the logical flow structure of the software. This high-level diagram provides an overview of the system's components and their interactions.
 
-- Compile/Execution Section, which briefly provides information about compiling environment, compiling steps, execution instructions etc. You are encouraged to provide as much detailed information as you think might help to run your code.
+### 3. Logical Flow Diagrams for Methods, Functions, and Procedures
 
-- Test Cases Section, which:
- Describes the tests you have run on your program to convince yourself that it is indeed correct.
- Also describe any cases for which your program is known not to work correctly.
+#### Purpose:
+Individual UML diagrams are included for each method, function, and procedure defined in the software. These diagrams offer a detailed look at the internal logic and flow of each component.
 
-- Includes screenshots of execution sessions processing valid inputs and invalid inputs
+### 4. Files/Database Section
+
+#### Purpose:
+This section describes the input files and/or databases used to test the application. It includes information on files containing valid and invalid data, aiding in the testing process.
+
+### 5. Compile/Execution Section
+
+#### Purpose:
+This section provides detailed information on the compilation environment, steps to compile the code, and instructions for executing the program. Comprehensive information is included to facilitate smooth execution.
+
+### 6. Test Cases Section
+
+#### Purpose:
+This section outlines the tests conducted on the program to ensure its correctness. It includes a description of successful test cases and highlights any known issues or scenarios where the program may not function correctly.
+
+### 7. Screenshots of Execution Sessions
+
+#### Purpose:
+Visual representation is provided through screenshots of execution sessions, showcasing the program's behavior with both valid and invalid inputs. This offers a practical understanding of the software's performance.
+
+## Conclusion
+
+This documentation serves as a comprehensive guide, enabling users to understand, test, and execute the program effectively. Feedback and contributions are welcomed for continuous improvement.
