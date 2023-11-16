@@ -123,8 +123,6 @@ This section outlines the tests conducted on the program to ensure its correctne
 #### Purpose:
 Visual representation is provided through screenshots of execution sessions, showcasing the program's behavior with both valid and invalid inputs. This offers a practical understanding of the software's performance.
 
-
-
 ![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/ServerRunTest.png)
 
 #### Startup of program in command prompt.  Run Successful
@@ -145,6 +143,8 @@ Visual representation is provided through screenshots of execution sessions, sho
 
 #### Invalid test of not capitalizing name, yet the program corrects it and capitalizes first and last name. 
 #### Also shown is past test name in "User List." Run Successful
+
+The project involves the development of a web application using HTML and JavaScript, hosted on a Tomcat Apache server. The application features a secure login page that captures and retains user responses. Notably, the answers are stored on cookies, enhancing privacy and ensuring that the data is not directly saved on the website. To further optimize resource usage, answers are temporarily stored via session storage, guaranteeing that the information persists only throughout the active session. A unique feature of the code is the automatic capitalization of the first initials in both the first and last names, rectifying instances where the names are not initially entered with capital letters. This comprehensive implementation aims to provide a seamless and secure user experience while maintaining data integrity and privacy.
 
 ## Conclusion
 
