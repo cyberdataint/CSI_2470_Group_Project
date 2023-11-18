@@ -110,10 +110,41 @@ This section provides detailed information on the compilation environment, steps
 #### Purpose:
 This section outlines the tests conducted on the program to ensure its correctness. It includes a description of successful test cases and highlights any known issues or scenarios where the program may not function correctly.
 
+####Test conducted
+-Executing Server
+-Connecting to Local Host
+-Test All Application Buttons
+-Test to See if Button Presses Appear in Results
+-Navigate to back to see if user appears in "User List"
+-Attempt login will all lowercase letters to see if the name is made proper.
+
 ### 7. Screenshots of Execution Sessions
 
 #### Purpose:
 Visual representation is provided through screenshots of execution sessions, showcasing the program's behavior with both valid and invalid inputs. This offers a practical understanding of the software's performance.
+
+
+
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/ServerRunTest.png)
+
+#### Startup of program in command prompt.  Run Successful
+
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/LocalHostTest.png)
+
+#### Test of the local host url. Run Successful
+
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/ButtonTest.png)
+
+#### Test of all buttons after login. Run Successful
+
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/NormalCaseTest.png)
+
+#### Valid test of user implementing first and last name capitalized. Run Successful
+
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/LowercaseTest.png)
+
+#### Invalid test of not capitalizing name, yet the program corrects it and capitalizes first and last name. 
+#### Also shown is past test name in "User List." Run Successful
 
 ## Conclusion
 
