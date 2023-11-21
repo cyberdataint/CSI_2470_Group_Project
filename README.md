@@ -155,13 +155,13 @@ a. If everything is set up correctly, you should see a prompt for your first and
 #### Purpose:
 This section outlines the tests conducted on the program to ensure its correctness. It includes a description of successful test cases and highlights any known issues or scenarios where the program may not function correctly.
 
-####Test conducted
--Executing Server
--Connecting to Local Host
--Test All Application Buttons
--Test to See if Button Presses Appear in Results
--Navigate to back to see if user appears in "User List"
--Attempt login will all lowercase letters to see if the name is made proper.
+#### Test conducted
+* Executing Server
+* Connecting to Local Host
+* Test All Application Buttons
+* Test to See if Button Presses Appear in Results
+* Navigate to back to see if user appears in "User List"
+* Attempt login will all lowercase letters to see if the name is made proper.
 
 ### 7. Screenshots of Execution Sessions
 
