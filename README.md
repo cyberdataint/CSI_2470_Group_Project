@@ -83,7 +83,7 @@ http://localhost:8082/
 ### 1. Description of the Overall Program Design
 
 #### Purpose:
-This section offers a verbal overview of the project's functionality, outlining the core processes and system behavior. Additionally, it discusses potential improvements and extensions, providing insight into the source code's structure and interrelationships.
+The project involves the development of a web application using HTML and JavaScript, hosted on a Tomcat Apache server. The application features a secure login page that captures and retains user responses. Notably, the answers are stored on cookies, enhancing privacy and ensuring that the data is not directly saved on the website. To further optimize resource usage, answers are temporarily stored via session storage, guaranteeing that the information persists only throughout the active session. A unique feature of the code is the automatic capitalization of the first initials in both the first and last names, rectifying instances where the names are not initially entered with capital letters. This comprehensive implementation aims to provide a seamless and secure user experience while maintaining data integrity and privacy.
 
 ### 2. Logical Flow Diagram (UML)
 
