@@ -146,9 +146,9 @@ a. Alternatively, you can close the terminal to shut down the server
     ~~~
     http://localhost:8082
     ~~~
-    
+
 a. If everything is set up correctly, you should see a prompt for your first and last name
-2. Follow the instructions on the web page to create a  submission
+3. Follow the instructions on the web page to create a  submission
 
 ### 6. Test Cases Section
 
