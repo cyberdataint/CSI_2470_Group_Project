@@ -102,8 +102,38 @@ This section describes the input files and/or databases used to test the applica
 
 ### 5. Compile/Execution Section
 
-#### Purpose:
-This section provides detailed information on the compilation environment, steps to compile the code, and instructions for executing the program. Comprehensive information is included to facilitate smooth execution.
+#### Prerequisites:
+### 1. An installation of JDK 1.5.0_22
+        a.  Download can be found at [Oracle](https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html) (Account required)
+### 2. The file must be cloned to the C:\ Drive
+        a. This can simply be done by installing Github Desktop and selecting “File” -> “Clone Repository” -> Select File and Set URL path to (https://github.com/cyberdataint/CSI_2470_Group_Project.git) -> “Clone”
+            i. Download can be found here (https://github.com/cyberdataint/CSI_2470_Group_Project.git)
+### 3. Environment Variables must be set 
+        a. Open the **Command Prompt** to configure **CATALINA_HOME and set JAVA_HOME
+            i. To configure CATALINE_HOME, enter the following command into the **Command Prompt:** “set CATALINA_HOME=C:\Path**\To**\CSI_2470_Group_Project\jakarta_tomcat_5.0.25”, replacing“Path**\To**” with the path to your tomcat installation 
+                1. A shortcut to enter the path is to find your tomcat installation (specifically the“jakarta_tomcat_5.0.25” folder) and RMB ->“Copy as Path” -> CTRL + V after“CATALINA_HOME="
+                    a. Make sure to remove the quotation marks if you decide to use this method
+            ii. To set **JAVA_HOME** enter the following command into the **Command Prompt:** “set JAVA_HOME=C:\Program Files\Java\jdk1.5.0_22”
+                1. Double check your installation to confirm the “Java” folder is located in your “Program Files” folder, if not, check your “Program Files (x86)” folder, if you find the “Java” folder there, enter “ (x86)” directly after “Program Files” in the previous command
+                    a. If you don't find the “Java” folder in either, recheck your installation of JDK 1.5.0.22 from Step 1 and use Step 3.a.i.1 to enter the correct path
+### Running and Stopping the Server:
+    1. To start the server, open the Command Prompt and enter the following command after completing the prerequisites: 
+    ~~~
+    “%CATALINA_HOME%\bin\startup.bat”
+    ~~~
+        a. If working correctly, a second terminal should open up with a line at the bottom detailing the server startup time
+    2.  To stop the server, use the Command Prompt to enter the following command: 
+    ~~~
+    “%CATALINA_HOME%\bin\shutdown.bat”
+    ~~~
+        a. Alternatively, you can close the terminal to shut down the server
+### Accessing the Web Page: 
+    1. Open a new browser window and enter the following address into the search bar:
+    ~~~
+    http://localhost:8082
+    ~~~
+        a. If everything is set up correctly, you should see a prompt for your first and last name
+    2. Follow the instructions on the web page to create a  submission
 
 ### 6. Test Cases Section
 
