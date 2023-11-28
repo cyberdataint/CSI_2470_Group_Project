@@ -111,13 +111,11 @@ and our answer webpage is stored at C:\Users\Owner\CSI_2470_Group_Project\jakart
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/ab4168e1-293f-4fd5-8547-bf21a15da4fc)
 
 • Login page for the webserver:
-*
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/32e4c23c-3aac-41e1-ab15-a48633fa4e0c)
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c01de701-f889-4a72-af4a-353018d12d93)
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/1126ce26-1a5c-4b0d-976a-3fb423df5bdc)
 
 • Answers page for the webserver:
-*
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c9a01fdc-2e8c-4ba9-9e40-ab7447c67b02)
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/354f5cb0-4537-41a0-8151-5cec1c537ad6)
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/9e20f818-5bcb-4825-b25f-808533eb91ce)
