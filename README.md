@@ -195,28 +195,32 @@ This section outlines the tests conducted on the program to ensure its correctne
 #### Purpose:
 Visual representation is provided through screenshots of execution sessions, showcasing the program's behavior with both valid and invalid inputs. This offers a practical understanding of the software's performance.
 
+#### Start up test of program displaying Command prompt and Tomcat window
 
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/CMD.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/Tomcat.png)
+#### Test of Homepage working with URL
 
-![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/ServerRunTest.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/Homepage.png)
+#### Test of Normal User Login
 
-#### Startup of program in command prompt.  Run Successful
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/ProperLoginTest.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/WelcomeUser.png)
+#### Test of all buttons 
 
-![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/LocalHostTest.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/YesTest.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/NoTest.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/DontcareTest)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/Toggle.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/BackTest.png)
+#### Test of invalid entry of lowcase name, that will be capitialized after login
 
-#### Test of the local host url. Run Successful
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/LowerCap.png)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/LowerCaseTest.png)
+#### Test of seeing if both user logins appear on the list below the login
 
-![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/ButtonTest.png)
-
-#### Test of all buttons after login. Run Successful
-
-![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/NormalCaseTest.png)
-
-#### Valid test of user implementing first and last name capitalized. Run Successful
-
-![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/LowercaseTest.png)
-
-#### Invalid test of not capitalizing name, yet the program corrects it and capitalizes first and last name. 
-#### Also shown is past test name in "User List." Run Successful
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/UserListTest.png)
+#### All test successful
 
 ## Conclusion
 
