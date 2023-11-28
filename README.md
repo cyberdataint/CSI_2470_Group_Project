@@ -98,27 +98,29 @@ Individual UML diagrams are included for each method, function, and procedure de
 ### 4. Files/Database Section
 
 •	In C:\Users\Owner\CSI_2470_Group_Project\jakarta_tomcat_5.0.25 we have our server.
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/5135a0a9-9eac-4680-9517-e0856c98415c)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/5135a0a9-9eac-4680-9517-e0856c98415c)
 
 •	We start and stop the server using the bin file for example, C:\Users\Owner\CSI_2470_Group_Project\jakarta_tomcat_5.0.25\bin\startup  C:\Users\Owner\CSI_2470_Group_Project\jakarta_tomcat_5.0.25\bin\shutdown
 ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/9164f292-610e-4ca9-a470-85c93d8d3f26)
 
 •	Our website and subsequent code that displays to the user is stored in the Jakarta_tomcat_5.0.25 folder under web apps in the ROOT folder at the file path C:\Users\Owner\CSI_2470_Group_Project\jakarta_tomcat_5.0.25\webapps\ROOT
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c1fcdaab-1460-4f07-b795-e6aa7a3c96b4)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c1fcdaab-1460-4f07-b795-e6aa7a3c96b4)
 
 •	The ROOT folder houses all our files for the user interface of the project along with the subsequent scripts to run them. For example, our login webpage is stored in the file path of C:\Users\Owner\CSI_2470_Group_Project\jakarta_tomcat_5.0.25\webapps\ROOT\login.html
 and our answer webpage is stored at C:\Users\Owner\CSI_2470_Group_Project\jakarta_tomcat_5.0.25\webapps\ROOT\answer.html
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/ab4168e1-293f-4fd5-8547-bf21a15da4fc)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/ab4168e1-293f-4fd5-8547-bf21a15da4fc)
 
 •	Login page:
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/32e4c23c-3aac-41e1-ab15-a48633fa4e0c)
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c01de701-f889-4a72-af4a-353018d12d93)
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/1126ce26-1a5c-4b0d-976a-3fb423df5bdc)
+
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/32e4c23c-3aac-41e1-ab15-a48633fa4e0c)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c01de701-f889-4a72-af4a-353018d12d93)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/1126ce26-1a5c-4b0d-976a-3fb423df5bdc)
 
 •	Answers Page:
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c9a01fdc-2e8c-4ba9-9e40-ab7447c67b02)
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/354f5cb0-4537-41a0-8151-5cec1c537ad6)
- ![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/9e20f818-5bcb-4825-b25f-808533eb91ce)
+
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/c9a01fdc-2e8c-4ba9-9e40-ab7447c67b02)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/354f5cb0-4537-41a0-8151-5cec1c537ad6)
+![image](https://github.com/cyberdataint/CSI_2470_Group_Project/assets/125838792/9e20f818-5bcb-4825-b25f-808533eb91ce)
 
 ### 5. Compile/Execution Section
 
