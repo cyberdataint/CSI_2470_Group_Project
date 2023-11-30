@@ -1,5 +1,5 @@
-# CSI 2470 Project 
-
+# CSI 2470 Project - Computer Networks
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/CourseProject.png)
 
 
 # Directory
@@ -210,7 +210,7 @@ Visual representation is provided through screenshots of execution sessions, sho
 
 ![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/YesTest.png)
 ![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/NoTest.png)
-![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/DontcareTest)
+![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/DontcareTest.png)
 ![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/Toggle.png)
 ![Having Fun!](./jakarta_tomcat_5.0.25/webapps/ROOT/TestResults/BackTest.png)
 #### Test of invalid entry of lowcase name, that will be capitialized after login
